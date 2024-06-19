@@ -1,0 +1,14 @@
+---
+import { EMAIL_ID, DISCORD_USERNAME, DISCORD_USER_URL, LINKEDIN_URL  } from '../consts';
+---
+<section class="bg-black h-[50%] w-full flex flex-col gap-4">
+  <p class="text-white text-2xl font-extrabold font-sans py-4">quick links</p>
+  <p>
+    down to talk or work on stuff. hmu.
+  </p>
+  <ul class="list-disc px-5">
+    <li>discord at <a href={DISCORD_USER_URL} class="underline font-bold hover:text-white">{DISCORD_USERNAME}</a></li>
+    <li>linkedin at <a href={LINKEDIN_URL} class="underline font-bold hover:text-white">kprnv</a></li>
+    <li>mail to <a href={EMAIL_ID} class="underline font-bold hover:text-white">karthickprnv@gmail.com</a></li>
+  </ul>
+</section>
