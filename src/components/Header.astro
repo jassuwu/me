@@ -1,14 +1,14 @@
 ---
-import HeaderLink from './HeaderLink.astro';
+// import HeaderLink from './HeaderLink.astro';
 import { SITE_TITLE } from '../consts';
+// <HeaderLink class="text-white text-lg hover:text-white" href="/">home</HeaderLink>
+// <HeaderLink class="text-white text-lg hover:text-white" href="/work">work</HeaderLink>
 ---
 
-<header class="w-full h-[20%] bg-black flex justify-center">
+<header class="w-full bg-black flex justify-center py-4">
   <nav class="w-full flex justify-between items-center">
 		<h2><a class="text-white text-xl" href="/">{SITE_TITLE}</a></h2>
 		<div class="flex gap-4 justify-center items-center">
-			<HeaderLink class="text-white text-lg hover:text-white" href="/">home</HeaderLink>
-      <HeaderLink class="text-white text-lg hover:text-white" href="/work">work</HeaderLink>
       <div class="">
         <a class="text-white" href="https://github.com/jassuwu" target="_blank">
           <span class="sr-only">Checkout my GitHub</span>
