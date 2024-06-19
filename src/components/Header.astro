@@ -1,6 +1,6 @@
 ---
 // import HeaderLink from './HeaderLink.astro';
-import { SITE_TITLE } from '../consts';
+import { GITHUB_URL, SITE_TITLE } from '../consts';
 // <HeaderLink class="text-white text-lg hover:text-white" href="/">home</HeaderLink>
 // <HeaderLink class="text-white text-lg hover:text-white" href="/work">work</HeaderLink>
 ---
@@ -10,8 +10,7 @@ import { SITE_TITLE } from '../consts';
 		<h2><a class="text-white text-xl" href="/">{SITE_TITLE}</a></h2>
 		<div class="flex gap-4 justify-center items-center">
       <div class="">
-        <a class="text-white" href="https://github.com/jassuwu" target="_blank">
-          <span class="sr-only">Checkout my GitHub</span>
+        <a class="text-white" href={GITHUB_URL} target="_blank">
           <svg viewBox="0 0 16 16" aria-hidden="true" width="24" height="24"
           ><path
               fill="currentColor"
